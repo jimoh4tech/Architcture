@@ -1,0 +1,43 @@
+.footer {
+    height: 20vh;
+    margin-top: 5rem;
+    background-color: $color-default-1;
+    font-size: 1.5rem;
+    padding: 7rem 10rem;
+
+    &__title {
+        color: $color-primary-light;
+        float: right;
+        @include responsive(phone-large) {
+            padding-right: 40%;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__navigation {
+        padding-right: 10%;
+        float: left;
+        margin-top: 1rem;
+    }
+    &__list {
+        list-style: none;
+                
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 6rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-default;
+        
+        &:hover {
+            color: $color-primary-light;
+        }
+    }
+}

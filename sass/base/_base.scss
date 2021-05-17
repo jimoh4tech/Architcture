@@ -1,0 +1,29 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+    
+    @include responsive(mini-lap){
+        font-size: 57%;
+    }
+    @include responsive(tab-land){
+        font-size: 51.7%;
+    }
+    @include responsive(tap-port){
+        font-size: 43.5%;
+    }
+    @include responsive(tap-port-small){
+        font-size: 35.3%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+}

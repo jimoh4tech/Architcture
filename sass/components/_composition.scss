@@ -1,0 +1,20 @@
+.composition {
+    position: relative;
+
+    &__photo {
+        &-main {
+            position: relative;
+            float: left;
+            width: 47%;
+            margin-top: 3.5rem;
+        }
+        &-sub {
+            position: relative;
+            float: right;
+            width: 47%;
+            height: 20rem;
+
+            margin-bottom: 2rem;
+        }
+    }
+}

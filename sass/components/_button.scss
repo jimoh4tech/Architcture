@@ -1,0 +1,33 @@
+.btn {
+    text-decoration: none;
+    font-size: 1.7rem;
+    cursor: pointer;
+    padding: 2.1rem;
+    font-family: inherit;
+    margin-top: 2rem;
+    display: inline-block;
+}
+.heading-button {
+    color: $color-primary-dark;
+    border: 1px solid $color-primary-dark;
+    text-transform: uppercase;
+    background-color: $color-white;
+    
+}
+
+.btn-text {
+    color: $color-black;
+    background-color: $color-white;
+    padding: 1.5rem;
+    
+    &-inverse {
+        color: $color-black;
+        background-color: $color-primary-dark;
+        padding: 1.5rem;
+    }
+
+    &-plain {
+        color: $color-primary-light;
+        padding: 0;
+    }
+}

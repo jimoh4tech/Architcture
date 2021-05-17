@@ -1,0 +1,50 @@
+.header {
+    height: 10vh;
+    background-color: $color-white;
+    background-position: top;
+    font-size: 1.7rem;
+    &__title {
+        color: $color-primary-light;
+        float: left;
+        @include responsive(phone-large) {
+            padding-left: 30%;
+            font-size: 2.5rem
+        }
+        
+        
+    }
+
+    &__navigation {
+        padding-right: 10%;
+        float: right;
+        margin-top: 1rem;
+    }
+    &__list {
+        list-style: none;
+        
+        li.active a {
+            border-bottom: .2rem solid $color-primary-dark;
+        }        
+    }
+
+    &__item {
+        display: inline-block;
+        color: $color-black;
+
+        @include responsive(phone-large) {
+            display: none;
+        }
+        &:not(:last-child) {
+            margin-right: 6rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-black;
+        
+        &:hover {
+            color: $color-primary-light;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.section-home {
+    background-color: $color-white;
+    padding: 5rem 0;
+    @include responsive(phone) {
+        padding: 0;
+    }
+}
+
+.section-about {
+    background-color: $color-primary-dark;
+    color: $color-black;
+    padding: 2rem 5rem;
+    width: 75vw;
+    @include responsive(phone) {
+        width: 95%;
+    }
+}
+
+.section-our-work {
+    padding: 5rem 0;
+    width: 75vw;
+}
+
+.section-blog {
+    width: 75vw;
+    color: $color-black;
+}
